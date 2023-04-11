@@ -1,17 +1,12 @@
-const heading1 = React.createElement("h1", {
-    id:"title",
-}, "heading 1");
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 
-const heading2 = React.createElement("h2",{
-    id:"title",
-},"heading 2");
 
-const container = React.createElement("div", {
-    id:"container",
-},[heading1, heading2]);
+const header = React.createElement("h1", { id:"header" }, "header1 from parcel");
 
-console.log(heading1);
+const header2 = React.createElement("h1", { id:"header" }, "header2");
+    
+const container = React.createElement("div", {id:"division"}, [header, header2]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(container);
